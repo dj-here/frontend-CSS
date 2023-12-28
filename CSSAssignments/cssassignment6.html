@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moving Tile Animation</title>
+  <style>
+    .tile {
+      width: 100px;
+      height: 100px;
+      background-color: gold;
+      position: relative;
+      animation-name: moveTile;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; 
+    }
+
+    @keyframes moveTile {
+      0% {
+        left: 0;
+        top: 0;
+      }
+      50% {
+        left: 200px;
+        top: 100px;
+      }
+      100% {
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tile"></div>
+</body>
+</html>
